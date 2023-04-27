@@ -1,4 +1,4 @@
-[//]: # ([![Gitpod ready-to-code]&#40;https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&#41;]&#40;https://gitpod.io/#https://github.com/shaniqwa/known-world-task&#41;)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/shaniqwa/known-world-task)
 
 # The Known World
 
@@ -36,4 +36,4 @@ After refresh, a new game will start!
 ### Running your solution
 Please use Gitpod to run the solution, so we can easily test it :)
 
-[//]: # ([![Gitpod ready-to-code]&#40;https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&#41;]&#40;https://gitpod.io/#https://github.com/shaniqwa/known-world-task&#41;)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/shaniqwa/known-world-task)
