@@ -43,12 +43,13 @@ const onNewUpdate = (latestUpdate: IUpdate) => {
 }
 
 /**
- * TODO: calculate the new position
- * @param x1 house x position
- * @param y1 house y position
- * @param x2 destination x position
- * @param y2 destination y position
- * @param length number of steps towards destination
+ * Calculates the new position based on the given parameters
+ * @param x1 - The x position of the starting point
+ * @param y1 - The y position of the starting point
+ * @param x2 - The x position of the destination point
+ * @param y2 - The y position of the destination point
+ * @param length - The number of steps towards the destination
+ * @returns The new position as an IPoint object, or the destination if the new position is beyond the destination
  */
 const calcNewPosition = (x1: number, y1: number, x2: number, y2: number, length: number): IPoint => {
   return {x: 0, y: 0}

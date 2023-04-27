@@ -1,7 +1,6 @@
 // import data from '../../public/init.json';
 import House from '../models/House';
 import {IPoint} from '../models/IPoint';
-import { createApp } from 'vue'
 import { createStore } from 'vuex'
 
 let serverURL = '';
@@ -119,7 +118,7 @@ const store = createStore({
         updateHouse(state: IStore, house) {
             const i = state.houses.findIndex(item => item.id === house.id);
             if (i > -1) {
-                // Vue.set(state.houses, i, house);
+               state.houses[i] = house;
             }
         },
         createNewUpdate(state: IStore) {
@@ -138,7 +137,7 @@ const store = createStore({
     actions: {
         initUpdates({commit, state}) {
             (function loop() {
-                const rand = Math.round(Math.random() * (3000 - 500)) + 500;
+                const rand = Math.round(Math.random() * (1000 - 500)) + 500;
                 setTimeout(function () {
                     commit('createNewUpdate');
                     if (!state.winner) loop();
