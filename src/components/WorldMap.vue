@@ -2,6 +2,18 @@
   <div>
     <div class="map" :class="{'full-size': isFullSize}">
       <div class="full-size-btn" @click="isFullSize = !isFullSize">toggle full size</div>
+      <div
+          v-for="house in houses"
+           :key="house.id"
+          class="flag"
+          :style="{
+            position: 'absolute',
+            top: house.position.y + 'px',
+            left: house.position.x + 'px',
+          }"
+      >
+        <img :src="require(`@/assets/${house.flag}`)">
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +56,10 @@ const housePosition = (house: House) => {
     color: #a58e64;
     background-color: #775f3c;
     padding: 3px;
+  }
+
+  .flag img{
+    width: 50px;
   }
 }
 </style>
