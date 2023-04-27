@@ -1,6 +1,7 @@
-module.exports = {
-    // disable the host check on sandbox
+const { defineConfig } = require('@vue/cli-service')
+module.exports = defineConfig({
+    transpileDependencies: true,
     devServer: {
-        disableHostCheck: true
+        allowedHosts: "all"
     }
-};
+})
